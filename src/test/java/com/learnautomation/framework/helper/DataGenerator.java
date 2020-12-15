@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 public class DataGenerator {
 
 	@DataProvider(name = "LoginData")
-	public Object[][] setDataForApplication() 
+	public static Object[][] setDataForApplication() 
 	{
 		System.out.println("LOG:INFO- Test Data is getting prepared");
 
@@ -30,7 +30,7 @@ public class DataGenerator {
 	
 	
 	@DataProvider(name = "SingleLogin")
-	public Object[][] setLoginData() 
+	public static Object[][] setLoginData() 
 	{
 		System.out.println("LOG:INFO- Test Data is getting prepared");
 
@@ -54,7 +54,7 @@ public class DataGenerator {
 	
 	
 	@DataProvider(name = "Registration")
-	public Object[][] setRegistrationDataForApplication() 
+	public static Object[][] setRegistrationDataForApplication() 
 	{
 		System.out.println("LOG:INFO- Test Data is getting prepared");
 
