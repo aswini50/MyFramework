@@ -36,15 +36,15 @@ public class DataGenerator {
 
 		ExcelReader excel = new ExcelReader();
 
-		int row = excel.getRowCount("Data3");
+		int row = excel.getRowCount("Login");
 
-		int column = excel.getColumnCount("Data3");
+		int column = excel.getColumnCount("Login");
 
 		Object[][] arr = new Object[row][column];
 
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
-				arr[i][j] = excel.getCellData("Data3", i, j);
+				arr[i][j] = excel.getCellData("Login", i, j);
 			}
 		}
 

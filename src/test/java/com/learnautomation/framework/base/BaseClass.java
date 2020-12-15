@@ -8,7 +8,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+
+import com.learnautomation.framework.helper.ConfigReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,18 +17,20 @@ public class BaseClass {
 
 	public WebDriver driver;
 	
-	@Parameters({"Browser","stagingURL"})
+	
 	@BeforeClass
-	public WebDriver startBrowser(String browser,String appURL)
+	public WebDriver startBrowser()
 	{
 		
 		System.out.println("********** Starting Session **********");
 		
+	
+		
+		String browser=ConfigReader.getProperty("Browser");
+		String appURL=ConfigReader.getProperty("stagingURL");
+		
 		System.out.println("Test is running on "+browser);
 		System.out.println("URL "+appURL);
-		
-		//String browser=ConfigReader.getProperty("Browser");
-		//String appURL=ConfigReader.getProperty("stagingURL");
 	
 		if(browser.equalsIgnoreCase("Chrome"))
 		{

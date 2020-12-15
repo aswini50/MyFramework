@@ -2,16 +2,16 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16887" started-at="2020-11-29T08:45:44Z" finished-at="2020-11-29T08:46:01Z">
+  <suite name="Default suite" duration-ms="17462" started-at="2020-12-15T10:01:19Z" finished-at="2020-12-15T10:01:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16887" started-at="2020-11-29T08:45:44Z" finished-at="2020-11-29T08:46:01Z">
+    <test name="Default test" duration-ms="17462" started-at="2020-12-15T10:01:19Z" finished-at="2020-12-15T10:01:36Z">
       <class name="com.learnautomation.framework.testcases.LoginTest">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@27c20538]" name="startBrowser" is-config="true" duration-ms="15501" started-at="2020-11-29T14:15:44Z" finished-at="2020-11-29T14:16:00Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@32eff876]" name="startBrowser" is-config="true" duration-ms="16270" started-at="2020-12-15T15:31:19Z" finished-at="2020-12-15T15:31:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="SKIP" signature="loginWithAdmin(java.lang.String, java.lang.String)[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@27c20538]" name="loginWithAdmin" duration-ms="0" started-at="2020-11-29T14:16:00Z" data-provider="SingleLogin" finished-at="2020-11-29T14:16:00Z">
+        <test-method status="SKIP" signature="loginWithAdmin(java.lang.String, java.lang.String)[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@32eff876]" name="loginWithAdmin" duration-ms="0" started-at="2020-12-15T15:31:35Z" data-provider="SingleLogin" finished-at="2020-12-15T15:31:35Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Can't invoke method public java.lang.Object[][] com.learnautomation.framework.helper.DataGenerator.setLoginData() on this instance of class com.learnautomation.framework.testcases.LoginTest due to class mismatch]]>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithAdmin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@27c20538]" name="closeBrowser" is-config="true" duration-ms="1289" started-at="2020-11-29T14:16:00Z" finished-at="2020-11-29T14:16:01Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@32eff876]" name="closeBrowser" is-config="true" duration-ms="1075" started-at="2020-12-15T15:31:35Z" finished-at="2020-12-15T15:31:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

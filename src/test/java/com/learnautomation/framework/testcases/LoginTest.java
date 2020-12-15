@@ -22,10 +22,10 @@ public class LoginTest extends BaseClass{
 	
 
 	
-	@Test
+	@Test(dataProvider="SingleLogin",dataProviderClass=DataGenerator.class)
 	public void loginWithAdmin(String uname,String pass)
 	{
-		login.loginToApplication("Admin","admin123");	
+		login.loginToApplication(uname,pass);	
 		signout.logOut();
 	}
 

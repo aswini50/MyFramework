@@ -1,6 +1,5 @@
 package com.learnautomation.framework.pages;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.ListDocument.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +17,7 @@ PageFactory.initElements(driver,this);
 
 //Locators of Web Elements used in Employee Page
 //WebElement addEmployee = driver.findElement(By.xpath("//input[@value='Add']"));
-WebElement firstName =  driver.findElement(By.xpath("//*[text()='Full Name']//following::input[1]"));
+	WebElement firstName =  driver.findElement(By.xpath("//*[text()='Full Name']//following::input[1]"));
 WebElement middleName = driver.findElement(By.xpath("//*[text()='Full Name']//following::input[2]"));
 WebElement lastName = driver.findElement(By.xpath("//*[text()='Full Name']//following::input[3]"));
 WebElement empID = driver.findElement(By.xpath("//*[text()='Employee Id']//following::input[1]"));
@@ -32,11 +31,11 @@ WebElement status = driver.findElement(By.id("status"));
 String status_in_dropdown ="enabled" ;
 java.util.List<WebElement> options = status.findElements(By.tagName("option"));
 WebElement saveButton = driver.findElement(By.id("btnSave"));
-WebElement PIM_Tab = driver.findElement(By.id("menu_pim_viewPimModule")) ;
+WebElement PIM_Tab = driver.findElement(By.id("menu_pim_viewPimModule")) ;//Move into method
 
 public void navigate_to_EmployeePage(){
 PIM_Tab.click();
-}
+} // This should be in admin page
 
 public void selectDropdown(String status_to_pass){
 
