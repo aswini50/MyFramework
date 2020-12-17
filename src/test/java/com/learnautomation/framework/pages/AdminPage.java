@@ -1,5 +1,29 @@
 package com.learnautomation.framework.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
 public class AdminPage {
 
+	WebDriver driver;
+	public AdminPage(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+	}
+	
+	By PIM_Tab = (By.id("menu_pim_viewPimModule")) ;
+	
+	public void navigateToEmployeePage(){
+	//Dashboard 
+	// Locator
+	// Should this passed as an argument ?(Locator should be outside)
+	
+	// Navigation
+	driver.findElement(PIM_Tab).click();
+	
+	}
 }
