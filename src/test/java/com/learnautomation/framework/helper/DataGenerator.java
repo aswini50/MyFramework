@@ -53,8 +53,10 @@ public class DataGenerator {
 	}
 	
 	
+
 	@DataProvider(name = "AddEmployee")
 	public static Object[][] setEmployeeDataForApplication() 
+
 	{
 		System.out.println("LOG:INFO- Test Data is getting prepared");
 

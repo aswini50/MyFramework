@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
@@ -20,6 +21,29 @@
             <param index="0">
               <value>
                 <![CDATA[Admin]]>
+=======
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12861" started-at="2020-12-15T10:24:01Z" finished-at="2020-12-15T10:24:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12861" started-at="2020-12-15T10:24:01Z" finished-at="2020-12-15T10:24:13Z">
+      <class name="com.learnautomation.framework.testcases.LoginTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@69ea3742]" name="startBrowser" is-config="true" duration-ms="9129" started-at="2020-12-15T15:54:01Z" finished-at="2020-12-15T15:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@69ea3742]" name="setup" is-config="true" duration-ms="14" started-at="2020-12-15T15:54:12Z" finished-at="2020-12-15T15:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginWithAdmin(java.lang.String, java.lang.String)[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@69ea3742]" name="loginWithAdmin" duration-ms="1521" started-at="2020-12-15T15:54:12Z" data-provider="SingleLogin" finished-at="2020-12-15T15:54:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+>>>>>>> 3773628169487ae6414cd97c0805b88414259a43
               </value>
             </param>
             <param index="1">
@@ -27,6 +51,7 @@
                 <![CDATA[admin123]]>
               </value>
             </param>
+<<<<<<< HEAD
             <param index="2">
               <value>
                 <![CDATA[Aswini101]]>
@@ -265,6 +290,21 @@ Session ID: 37aa81d0cadf469303752c52a78537a0
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
 	at com.learnautomation.framework.pages.LoginPage.loginToApplication(LoginPage.java:43)
 	at com.learnautomation.framework.testcases.AddEmployee.addEmployeeAsAdmin(AddEmployee.java:38)
+=======
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.learnautomation.framework.pages.LoginPage.loginToApplication(LoginPage.java:46)
+	at com.learnautomation.framework.testcases.LoginTest.loginWithAdmin(LoginTest.java:30)
+>>>>>>> 3773628169487ae6414cd97c0805b88414259a43
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -286,16 +326,24 @@ Session ID: 37aa81d0cadf469303752c52a78537a0
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeAsAdmin -->
         <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.learnautomation.framework.testcases.AddEmployee@27c20538]" name="closeBrowser" is-config="true" duration-ms="866" started-at="2020-12-16T17:21:03Z" finished-at="2020-12-16T17:21:04Z">
+=======
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithAdmin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.learnautomation.framework.testcases.LoginTest@69ea3742]" name="closeBrowser" is-config="true" duration-ms="210" started-at="2020-12-15T15:54:13Z" finished-at="2020-12-15T15:54:13Z">
+>>>>>>> 3773628169487ae6414cd97c0805b88414259a43
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

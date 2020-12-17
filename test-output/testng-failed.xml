@@ -10,10 +10,17 @@
     <classes>
       <class name="com.learnautomation.framework.testcases.AddEmployee">
         <methods>
+<<<<<<< HEAD
           <include name="addEmployeeAsAdmin" invocation-numbers="1 2"/>
           <include name="setup"/>
           <include name="startBrowser"/>
           <include name="closeBrowser"/>
+=======
+          <include name="setup"/>
+          <include name="startBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="loginWithAdmin" invocation-numbers="0"/>
+>>>>>>> 3773628169487ae6414cd97c0805b88414259a43
         </methods>
       </class> <!-- com.learnautomation.framework.testcases.AddEmployee -->
     </classes>
