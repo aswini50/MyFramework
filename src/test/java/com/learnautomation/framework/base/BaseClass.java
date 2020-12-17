@@ -34,7 +34,8 @@ public class BaseClass {
 	
 		if(browser.equalsIgnoreCase("Chrome"))
 		{
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("FF"))
@@ -60,7 +61,7 @@ public class BaseClass {
 	public void closeBrowser()
 	{
 		System.out.println("********** Closing Session **********");
-		driver.quit();
+		//driver.quit();
 		System.out.println("********** Session Closed **********");
 	}
 	

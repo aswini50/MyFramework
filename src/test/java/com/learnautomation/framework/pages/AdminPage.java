@@ -14,8 +14,10 @@ public class AdminPage {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
+	By Admin_Tab = By.xpath("//b[text()='Admin']");
+	By PIM_Tab = By.id("menu_pim_viewPimModule") ;
+	By EmpList_Tab = By.id("menu_pim_viewEmployeeList");
 	
-	By PIM_Tab = (By.id("menu_pim_viewPimModule")) ;
 	
 	public void navigateToEmployeePage(){
 	//Dashboard 
@@ -23,7 +25,19 @@ public class AdminPage {
 	// Should this passed as an argument ?(Locator should be outside)
 	
 	// Navigation
-	driver.findElement(PIM_Tab).click();
+		driver.findElement(Admin_Tab).click();
+		driver.findElement(PIM_Tab).click();
 	
 	}
+	
+	public void navigateToEmployeeListPage(){
+	
+		
+		// Navigation
+			driver.findElement(Admin_Tab).click();
+			driver.findElement(PIM_Tab).click();
+			driver.findElement(EmpList_Tab).click();
+			
+		
+		}
 }

@@ -43,7 +43,7 @@ public class LoginPage {
 		driver.findElement(username).sendKeys(user);
 		driver.findElement(password).sendKeys(pass);
 		driver.findElement(loginButton).click();
-		Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
+		Assert.assertTrue(driver.getCurrentUrl().contains("index.php"));
 	}
 	
 }
