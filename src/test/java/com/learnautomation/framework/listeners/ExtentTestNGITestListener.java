@@ -1,13 +1,18 @@
 package com.learnautomation.framework.listeners;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.learnautomation.framework.base.BaseClass;
+import com.learnautomation.framework.helper.Utility;
 
-public class ExtentTestNGITestListener implements ITestListener{
+public class ExtentTestNGITestListener  extends BaseClass implements ITestListener{
 
 	ExtentReports extent=ExtentManager.getInstance();
 	
@@ -33,8 +38,17 @@ public class ExtentTestNGITestListener implements ITestListener{
 	public void onTestFailure(ITestResult result) 
 	{
 		System.out.println("********** Test Failed*********"+result.getThrowable().getMessage());
-
-		parentTest.get().fail("Test Failed "+result.getThrowable().getMessage());
+		System.out.println("Driver Value is : " + driver);
+		try {
+			parentTest.get().fail("Test Failed "+result.getThrowable().getMessage(),
+					MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build()
+					
+					);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		
 	}
 
