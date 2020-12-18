@@ -1,7 +1,9 @@
 package com.learnautomation.framework.listeners;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -12,7 +14,11 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.learnautomation.framework.base.BaseClass;
 import com.learnautomation.framework.helper.Utility;
 
-public class ExtentTestNGITestListener  extends BaseClass implements ITestListener{
+import net.bytebuddy.asm.Advice.Enter;
+
+public class ExtentTestNGITestListener  implements ITestListener{
+	
+	
 
 	ExtentReports extent=ExtentManager.getInstance();
 	
@@ -38,13 +44,26 @@ public class ExtentTestNGITestListener  extends BaseClass implements ITestListen
 	public void onTestFailure(ITestResult result) 
 	{
 		System.out.println("********** Test Failed*********"+result.getThrowable().getMessage());
-		System.out.println("Driver Value is : " + getDriver());
+		//System.out.println("Driver Value is : " + getDriver());
 		try {
+		WebDriver driver = null;
+
+		Class clazz = result.getTestClass().getRealClass();
+
+		Field field = clazz.getDeclaredField("driver");
+
+		driver=(WebDriver) field.get(result.getInstance());
+
+		System.out.println("Value for driver is "+driver);
+
+	
+
+		
 			parentTest.get().fail("Test Failed "+result.getThrowable().getMessage(),
-					MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(getDriver())).build()
+					MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build()
 					
 					);
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

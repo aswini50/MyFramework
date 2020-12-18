@@ -1,5 +1,6 @@
 package com.learnautomation.framework.testcases;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,11 +18,13 @@ public class AddEmployee extends BaseClass{
 	AdminPage admin ;
 	EmployeePage employeeAdd;
 	Signout signout ;
+	public WebDriver driver;
 
 // Before Test
 	@BeforeMethod
 	public void setup()
 	{
+		driver =getDriver();
 		login=new LoginPage(driver);
 		admin =new AdminPage(driver) ;
 		employeeAdd = new EmployeePage(driver);
