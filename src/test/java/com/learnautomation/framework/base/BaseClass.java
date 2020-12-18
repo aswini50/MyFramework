@@ -17,6 +17,10 @@ public class BaseClass {
 
 	public WebDriver driver;
 	
+	public WebDriver getDriver(){
+		return driver;
+		
+	}
 	
 	@BeforeClass
 	public WebDriver startBrowser()

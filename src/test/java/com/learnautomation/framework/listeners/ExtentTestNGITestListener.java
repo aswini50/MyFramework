@@ -38,10 +38,10 @@ public class ExtentTestNGITestListener  extends BaseClass implements ITestListen
 	public void onTestFailure(ITestResult result) 
 	{
 		System.out.println("********** Test Failed*********"+result.getThrowable().getMessage());
-		System.out.println("Driver Value is : " + driver);
+		System.out.println("Driver Value is : " + getDriver());
 		try {
 			parentTest.get().fail("Test Failed "+result.getThrowable().getMessage(),
-					MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build()
+					MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(getDriver())).build()
 					
 					);
 		} catch (IOException e) {
