@@ -11,13 +11,13 @@ import org.testng.Assert;
 
 public class EmployeeList {
 
-	WebDriver driver ;
-	
-	public EmployeeList(WebDriver driver)
-	{
-	this.driver=driver;
-	PageFactory.initElements(driver,this);
-	}
+		WebDriver driver ;
+		
+		public EmployeeList(WebDriver driver)
+		{
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+		}
 	
 	//Locators in this page 
 	By EmpName =By.id("empsearch_employee_name_empName"); 

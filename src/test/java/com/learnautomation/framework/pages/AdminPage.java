@@ -17,7 +17,9 @@ public class AdminPage {
 	By Admin_Tab = By.xpath("//b[text()='Admin']");
 	By PIM_Tab = By.id("menu_pim_viewPimModule") ;
 	By EmpList_Tab = By.id("menu_pim_viewEmployeeList");
-	
+	By leaveTab=By.id("menu_leave_viewLeaveModule");
+	By applyLeaveTab = By.id("menu_leave_applyLeave");
+
 	
 	public void navigateToEmployeePage(){
 	//Dashboard 
@@ -27,6 +29,7 @@ public class AdminPage {
 	// Navigation
 		driver.findElement(Admin_Tab).click();
 		driver.findElement(PIM_Tab).click();
+
 	
 	}
 	
@@ -40,4 +43,10 @@ public class AdminPage {
 			
 		
 		}
+	
+	public void navigateToLeavePage(){
+		driver.findElement(leaveTab).click();
+		driver.findElement(applyLeaveTab).click();
+
+	}
 }

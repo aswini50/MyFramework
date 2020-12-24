@@ -100,6 +100,29 @@ public class DataGenerator {
 		System.out.println("LOG:INFO: Test Data is ready");
 		return arr;
 	}
-	
+	@DataProvider(name = "ApplyLeave")
+	public static Object[][] applyLeave() 
+
+	{
+		System.out.println("LOG:INFO- Test Data is getting prepared");
+
+		ExcelReader excel = new ExcelReader();
+
+		int row = excel.getRowCount("ApplyLeave");
+
+		int column = excel.getColumnCount("ApplyLeave");
+
+		Object[][] arr = new Object[row][column];
+
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < column; j++) {
+				arr[i][j] = excel.getCellData("ApplyLeave", i, j);
+			}
+		}
+
+		System.out.println("LOG:INFO: Test Data is ready");
+		return arr;
+	}
+
 
 }
