@@ -19,7 +19,7 @@ public class AdminPage {
 	By EmpList_Tab = By.id("menu_pim_viewEmployeeList");
 	By leaveTab=By.id("menu_leave_viewLeaveModule");
 	By applyLeaveTab = By.id("menu_leave_applyLeave");
-
+	By recruitmentTab = By.id("menu_recruitment_viewRecruitmentModule");
 	
 	public void navigateToEmployeePage(){
 	//Dashboard 
@@ -48,5 +48,10 @@ public class AdminPage {
 		driver.findElement(leaveTab).click();
 		driver.findElement(applyLeaveTab).click();
 
+	}
+	
+	public void navigateToRecruitmentPage(){
+		driver.findElement(recruitmentTab).click();
+	
 	}
 }

@@ -124,5 +124,29 @@ public class DataGenerator {
 		return arr;
 	}
 
+	@DataProvider(name = "UpdateVacancy")
+	public static Object[][] updateVacancy() 
+
+	{
+		System.out.println("LOG:INFO- Test Data is getting prepared");
+
+		ExcelReader excel = new ExcelReader();
+
+		int row = excel.getRowCount("Vacancy");
+
+		int column = excel.getColumnCount("Vacancy");
+
+		Object[][] arr = new Object[row][column];
+
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < column; j++) {
+				arr[i][j] = excel.getCellData("Vacancy", i, j);
+			}
+		}
+
+		System.out.println("LOG:INFO: Test Data is ready");
+		return arr;
+	}
+
 
 }

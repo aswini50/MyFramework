@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 24 14:07:35 IST 2020</td>
+<td>Started on:</td><td>Sun Jan 03 17:19:45 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12405 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21902 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,8 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.learnautomation.framework.testcases.ApplyLeaveTest.applyLeave()'><b>applyLeave</b><br>Test class: com.learnautomation.framework.testcases.ApplyLeaveTest<br>Parameters: Admin, admin123, By.xpath("//*[text()='Leave Type ']//following::select[1]"), By.xpath("//table[contains(@class,'calendar')]//a[text()=25]"), I am out sick</td>
-<td><div><pre>java.lang.IllegalArgumentException: argument type mismatch
+<td title='com.learnautomation.framework.testcases.updateVacancy.updateVancacyCount()'><b>updateVancacyCount</b><br>Test class: com.learnautomation.framework.testcases.updateVacancy<br>Parameters: Admin, admin123, 1.0</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.learnautomation.framework.pages.RecruitmentPage.updateVacancy(RecruitmentPage.java:41)
+	at com.learnautomation.framework.testcases.updateVacancy.updateVancacyCount(updateVacancy.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -101,8 +107,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace389779746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace389779746'><pre>java.lang.IllegalArgumentException: argument type mismatch
+</pre></div><a href='#' onClick='toggleBox("stack-trace800493254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace800493254'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.learnautomation.framework.pages.RecruitmentPage.updateVacancy(RecruitmentPage.java:41)
+	at com.learnautomation.framework.testcases.updateVacancy.updateVancacyCount(updateVacancy.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,8 +140,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>0</td>
-<td>com.learnautomation.framework.testcases.ApplyLeaveTest@6e06451e</td></tr>
+<td>8</td>
+<td>com.learnautomation.framework.testcases.updateVacancy@27c20538</td></tr>
 </table><p>
 </body>
 </html>

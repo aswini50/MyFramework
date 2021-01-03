@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse-1379837286\testng-customsuite.xml</span>
+                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse--855743488\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.learnautomation.framework.testcases.ApplyLeaveTest" hash-for-method="applyLeave(Admin, admin123, By.xpath(&quot;//*[text()=&#039;Leave Type &#039;]//following::select[1]&quot;), By.xpath(&quot;//table[cont...)">applyLeave(Admin, admin123, By.xpath("//*[text()='Leave Type ']//following::select[1]"), By.xpath("//table[cont...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.learnautomation.framework.testcases.updateVacancy" hash-for-method="updateVancacyCount(Admin, admin123, 1.0)">updateVancacyCount(Admin, admin123, 1.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,16 +120,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.learnautomation.framework.testcases.ApplyLeaveTest</span>
+              <span class="class-name">com.learnautomation.framework.testcases.updateVacancy</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="applyLeave(Admin, admin123, By.xpath(&quot;//*[text()=&#039;Leave Type &#039;]//following::select[1]&quot;), By.xpath(&quot;//table[cont...)">
-                  </a> <!-- applyLeave(Admin, admin123, By.xpath("//*[text()='Leave Type ']//following::select[1]"), By.xpath("//table[cont...) -->
-                  <span class="method-name">applyLeave</span>
-                  <span class="parameters">(Admin, admin123, By.xpath("//*[text()='Leave Type ']//following::select[1]"), By.xpath("//table[contains(@class,'calendar')]//a[text()=25]"), I am out sick)</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: argument type mismatch
+                  <a name="updateVancacyCount(Admin, admin123, 1.0)">
+                  </a> <!-- updateVancacyCount(Admin, admin123, 1.0) -->
+                  <span class="method-name">updateVancacyCount</span>
+                  <span class="parameters">(Admin, admin123, 1.0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.learnautomation.framework.pages.RecruitmentPage.updateVacancy(RecruitmentPage.java:41)
+	at com.learnautomation.framework.testcases.updateVacancy.updateVancacyCount(updateVacancy.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,7 +169,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse-1379837286\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse--855743488\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -172,7 +178,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.learnautomation.framework.testcases.ApplyLeaveTest&quot;/&gt;
+      &lt;class name=&quot;com.learnautomation.framework.testcases.updateVacancy&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -214,14 +220,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'applyLeave')
-data.setCell(0, 2, 'com.learnautomation.framework.testcases.ApplyLeaveTest')
-data.setCell(0, 3, 8);
+data.setCell(0, 1, 'updateVancacyCount')
+data.setCell(0, 2, 'com.learnautomation.framework.testcases.updateVacancy')
+data.setCell(0, 3, 8925);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -247,24 +253,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.learnautomation.framework.testcases.ApplyLeaveTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.learnautomation.framework.testcases.updateVacancy</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">12359 ms</span>
+                <span class="method-start">12957 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">applyLeave(Admin, admin123, By.xpath("//*[text()='Leave Type ']//following::select[1]"), By.xpath("//table[cont...)</span>
-                <span class="method-start">12368 ms</span>
+                <span class="method-name">updateVancacyCount(Admin, admin123, 1.0)</span>
+                <span class="method-start">12958 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">12381 ms</span>
+                <span class="method-start">21889 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
